@@ -3,6 +3,7 @@ const crypto = require("crypto");
 
 const app = express();
 app.use(express.json());
+app.use(express.static('public'));
 
 // Block structure
 class Block {

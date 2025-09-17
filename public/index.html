@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Donation Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain Donation Tracker</h1>
+        
+        <div class="form-container">
+            <h2>Add a New Donation</h2>
+            <form id="donationForm">
+                <input type="text" id="donor" placeholder="Your Name" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <input type="text" id="purpose" placeholder="Purpose of Donation" required>
+                <button type="submit">Add Donation</button>
+            </form>
+        </div>
+
+        <div class="chain-container">
+            <h2>Current Blockchain</h2>
+            <pre id="blockchain"></pre>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
